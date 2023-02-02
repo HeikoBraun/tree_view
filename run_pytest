@@ -1,0 +1,1 @@
+pytest --cov=tree_view --cov-report html $@

@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """nt"""
 
+
 def tree(data, initial=True):
     """Format of data is {element:{child_dict},}
     e.g. {"top": {"sub1": {"subsub1": {}}, "sub2": {}}}"""
@@ -25,12 +26,3 @@ def tree(data, initial=True):
     if initial:
         ret = "\n".join(ret)
     return ret
-
-
-def main():
-    """main call"""
-    print(tree({"top": {"sub1": {"subsub1": {}}, "sub2": {}}}))
-
-
-if __name__ == "__main__":
-    main()
